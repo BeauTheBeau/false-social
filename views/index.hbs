@@ -1,2 +1,107 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<header id="header">
+
+  <img
+    src="images/false-banner-round.webp"
+    alt="False Social Banner"
+    class="banner"
+  />
+  <p>The world's best social media platform for sharing false information.</p>
+
+  <a href="#main" class="scroll-prompt"><i
+      class="nf nf-md-chevron_down"
+    ></i></a>
+
+</header>
+
+<script defer>
+
+  const header = document.getElementById("header"); let x = 0; let y = 0; // as
+  the user moves their mouse, the headers's radial gradient (in ::after),
+  willmove with it document.body.addEventListener("mousemove", (e) => { x =
+  e.clientX / window.innerWidth; y = e.clientY / window.innerHeight;
+  header.style.setProperty("--x", x.toFixed(2) * 100 + "%");
+  header.style.setProperty("--y", y.toFixed(2) * 100 + "%"); });
+  header.addEventListener("mousemove", () => { // Move + rotate the banner with
+  the mouse c const banner = document.querySelector(".banner");
+  banner.style.transform = `translate(${x.toFixed(2) * 25}px, ${y.toFixed(2) *
+  25}px)`; banner.style.transform += `rotate(${x.toFixed(2) * 5}deg)`; });
+
+</script>
+
+<main id="main">
+
+  <div class="grid">
+    <div class="card">
+      <h2>Chill.</h2>
+      <p>Take a breather! Join the quirkiest social platform in the
+        universe—where wild stories roam free, and calmness finds its zen even
+        amidst the chaos.</p>
+
+      <div class="actions">
+        <a class="button primary" href="/signup">Sign Up</a>
+        <a class="button" href="/login">Login</a>
+      </div>
+
+      <img class="background" src="images/img.jpg" alt="Image" />
+    </div>
+
+    <div class="card">
+      <h2>Be Stealthy.</h2>
+      <p>We get it. You're here for the fun without leaving traces. No worries!
+        We don't peek into your secrets. No database, no servers, no
+        website—just a playful illusion.<br /><br /><br />
+        <sub>Legally, it's all in good humor.</sub>
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="/privacy">Check our Privacy Policy</a>
+      </div>
+      <img class="background" src="images/privacy.jpg" alt="Image" />
+
+    </div>
+
+    <div class="card">
+      <h2>Rise Above.</h2>
+      <p>Float above the ordinary! Experience False Premium and stay ahead of
+        the curve. Your posts take the spotlight, gaining more love and shares
+        before they're even in vogue.</p>
+
+      <div class="actions">
+        <a class="button primary" href="/premium">Get False Premium</a>
+        <a class="button" href="/login">Login</a>
+      </div>
+
+      <img class="background" src="images/burger.jpg" alt="Image" />
+
+    </div>
+
+    <div class="card">
+      <h2>Amplify Your Voice.</h2>
+      <p>We're not just any social platform; we care about your voice. Unleash
+        your thoughts with False Voice, and watch the world lend an ear. Your
+        words won't go unheard, we'll make sure of it.</p>
+
+      <div class="actions">
+        <a class="button primary" href="/voice">Project Your Voice</a>
+        <a class="button" href="/login">Login</a>
+      </div>
+
+      <img class="background" src="images/voice.jpg" alt="Image" />
+
+    </div>
+
+  </div>
+
+  <div class="cta">
+
+    <h2>Join the False Community</h2>
+    <p>Where facts take a holiday and imagination runs wild! Dive into a realm
+      where reality wears a funny hat and truths wear disguises.</p>
+    <div class="cta-actions">
+      <a class="button primary" href="/signup">Sign Up</a>
+      <a class="button" href="/login">Login</a>
+    </div>
+
+  </div>
+
+</main>
