@@ -1,0 +1,83 @@
+/* variables.scss */
+
+:root {
+  --large-border-radius: 1rem;
+  --medium-border-radius: 0.5rem;
+  --small-border-radius: 0.25rem;
+}
+
+:root {
+  // prefers dark/no-preference
+  @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+    // Solid colours
+    --primary-color: rgb(208, 151, 149);
+    --secondary-color: rgb(44, 112, 106);
+    --accent-color: rgb(103, 121, 195);
+
+    --primary-background-color: rgb(10, 8, 8);
+    --secondary-background-color: rgb(35, 35, 35);
+    --tertiary-background-color: rgb(211, 211, 211);
+
+    --primary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgb(211, 211, 211);
+    --tertiary-text-color: rgb(35, 35, 35);
+
+    --primary-border-color: rgb(255, 255, 255);
+    --secondary-border-color: rgb(98, 98, 98);
+    --tertiary-border-color: rgb(35, 35, 35);
+
+    --success-color: rgb(115, 178, 52);
+    --warning-color: rgb(232, 165, 48);
+    --danger-color: rgb(201, 29, 29);
+
+    // Transparent colours
+    --primary-color-transparent: rgba(208, 151, 149, 0.5);
+    --secondary-color-transparent: rgba(44, 112, 106, 0.5);
+    --accent-color-transparent: rgba(103, 121, 195, 0.5);
+
+    --primary-background-color-transparent: rgba(10, 8, 8, 0.5);
+    --secondary-background-color-transparent: rgba(35, 35, 35, 0.5);
+    --tertiary-background-color-transparent: rgba(211, 211, 211, 0.5);
+
+    --primary-text-color-transparent: rgba(255, 255, 255, 0.5);
+    --secondary-text-color-transparent: rgba(211, 211, 211, 0.5);
+    --tertiary-text-color-transparent: rgba(35, 35, 35, 0.5);
+
+    --primary-border-color-transparent: rgba(255, 255, 255, 0.5);
+    --secondary-border-color-transparent: rgba(98, 98, 98, 0.5);
+    --tertiary-border-color-transparent: rgba(35, 35, 35, 0.5);
+
+    --success-color-transparent: rgba(115, 178, 52, 0.8);
+    --warning-color-transparent: rgba(232, 165, 48, 0.8);
+    --danger-color-transparent: rgba(201, 29, 29, 0.8);
+  }
+
+  // prefers light
+  @media (prefers-color-scheme: light) {
+    // Solid colours
+    --primary-background-color: rgb(255, 255, 255);
+    --secondary-background-color: rgb(211, 211, 211);
+    --tertiary-background-color: rgb(35, 35, 35);
+
+    --primary-text-color: rgb(31, 41, 46);
+    --secondary-text-color: rgb(65, 80, 88);
+    --tertiary-text-color: rgb(200, 205, 208);
+
+    --success-color: rgb(115, 178, 52);
+    --warning-color: rgb(232, 165, 48);
+    --danger-color: rgb(201, 29, 29);
+
+    // Transparent colours
+    --primary-background-color-transparent: rgba(255, 255, 255, 0.5);
+    --secondary-background-color-transparent: rgba(211, 211, 211, 0.5);
+    --tertiary-background-color-transparent: rgba(35, 35, 35, 0.5);
+
+    --primary-text-color-transparent: rgba(31, 41, 46, 0.5);
+    --secondary-text-color-transparent: rgba(65, 80, 88, 0.5);
+    --tertiary-text-color-transparent: rgba(200, 205, 208, 0.5);
+
+    --success-color-transparent: rgba(115, 178, 52, 0.8);
+    --warning-color-transparent: rgba(232, 165, 48, 0.8);
+    --danger-color-transparent: rgba(201, 29, 29, 0.8);
+  }
+}
